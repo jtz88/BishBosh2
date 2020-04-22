@@ -1,0 +1,57 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Bish-Bosh 2.0</title>
+    <link href="Content/bootstrap.css" rel="stylesheet" />
+    <link href="Styles/Layout.css" rel="stylesheet" />
+</head>
+<body>
+    <header class="bg-secondary">
+        <div class="container mt-4">
+                <h1 class="display-4 text-center">
+                    Bish-Bosh 2.0
+                </h1>
+            </div>
+    </header>
+    <div class="container mt-4">
+        <form id="mainForm">
+            <fieldset class="box">
+                <legend>Make your selections</legend>
+                <div>
+                    <p>
+                        <label class="textlabel" for="firstNameInput">How many numbers?</label>
+                        <input id="totIter" type="number" required="required" min="1" placeholder="Enter how many numbers" />
+                    </p>
+                    <p>
+                        <label class="textlabel" for="firstNameInput">First divisible by?</label>
+                        <input id="firstMod" type="number" required="required" min="1" placeholder="First divisible by?" />
+                    </p>
+                    <p>
+                        <label class="textlabel" for="firstNameInput">Second divisible by?</label>
+                        <input id="secondMod" type="number" required="required" min="1" placeholder="Second divisible by?" />
+                    </p>
+                </div>
+            </fieldset>
+            <input type="submit" value="Execute" id="btn1" />
+        </form>
+    </div>
+    <div class="container mt-4">
+        <div>
+            <p id="log"></p>
+        </div>
+    </div>
+    <footer class="footer-custom page-footer font-small bg-secondary">
+        <div class="footer-copyright text-center py-3">
+            © 2020 Copyright
+        </div>
+        <div class="footer-copyright text-center py-3">
+            <a href="hmailto:joannis@fsmovies.com">webmaster@bish-bosh.com </a>
+        </div>
+    </footer>
+    <script src="Scripts/jquery-3.0.0.js"></script>
+    <script src="Scripts/popper.js"></script>
+    <script src="Scripts/bootstrap.js"></script>
+    <script src="JavaScripts/Scripts.js"></script>
+</body>
+</html>
